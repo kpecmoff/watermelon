@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+body{
+	font-family: "Lato";
+	display: flex;
+}
+.wrapper{
+	background: rgb(255,249,45);
+	background: linear-gradient(0deg, rgba(255,249,45,1) 1%, rgba(12,0,255,1) 100%);
+	width: 100%;
+	position: relative;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 200px;
+}
+.text{
+	color: rgb(255,249,45);
+	font-weight: 700;
+	font-size: 40px;
+	display: block;
+	z-index: 10;
+	position: absolute;
+	top: 80px;
+	left: 110px;
+	opacity: 0;
+	visibility: hidden;
+}
+.shadow:hover > .text{
+	opacity: 1;
+	visibility: visible;
+	transition: all 4s ease 0s;
+}
+.shadow{
+	width: 560px;
+	height: 200px;
+	background: rgba(12,0,255,1);
+	z-index: 6;
+	border-radius: 0px 0px 40px 40px;
+	position: relative;
+}
+.shadow::before{
+	content: "";
+	position: absolute;
+	left: -17px;
+	width: 595px;
+	height: 30px;
+	border: 2px solid rgba(12,0,255,1);
+	border-radius: 20px 20px 50px 50px;
+	background: rgba(12,0,255,1);	
+}
+.watermelon {
+	width: 510px;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+	transform: rotate(-20deg);
+	transition: all 0.5s ease 0s;
+	z-index: 5;
+}
+.watermelon:hover{
+	transform: rotate(20deg);
+}
+.watermelon::after {
+	content: "";
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	bottom: 10px;
+	left: 0;
+	border-bottom: 20px solid #3d6e23;
+	background-color: rgb(153, 31, 31);
+	border-radius: 50%;
+}
+.watermelon::before{
+	content: "";
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	bottom: 0px;
+	right: 0px;
+	border-radius:300px 500px 330px 500px;
+	background-color: #1a360b;
+}
+ .watermelon span{
+	position: absolute;
+	background-color: #000;
+	width: 20px;
+	height: 20px;
+	z-index: 2;
+	border-radius: 5px 5px 20px 20px;
+}
+
+.watermelon span:nth-child(6){
+	top: 20px;
+	left: 400px;
+}
+.watermelon span:nth-child(5){
+	top: 20px;
+	left: 100px;
+}
+.watermelon span:nth-child(4){
+	top: 80px;
+	left: 270px;
+}
+.watermelon span:nth-child(3){
+	top: 140px;
+	left: 330px;
+}
+.watermelon span:nth-child(2){
+	top: 160px;
+	left: 200px;
+}
+.watermelon span:nth-child(1){
+	top: 80px;
+	left: 130px;
+}
+
